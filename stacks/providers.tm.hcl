@@ -17,9 +17,9 @@ generate_hcl "_terramate_generated_providers.tf" {
     provider "aws" {
       project = global.terraform_aws_provider_project
       region  = global.terraform_aws_provider_region
-#      shared_config_files         = ["/Users/tvl/.aws/config"]
-#      shared_credentials_files    = ["/Users/tvl/.aws/credentials"]
-#      profile                     = "localstack"
+      #      shared_config_files         = ["/Users/tvl/.aws/config"]
+      #      shared_credentials_files    = ["/Users/tvl/.aws/credentials"]
+      #      profile                     = "localstack"
       s3_use_path_style           = true
       skip_credentials_validation = true
       skip_metadata_api_check     = true
